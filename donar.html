@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donar | THALASSA</title>
+    <link rel="icon" href="./icono/Icono-delfin.png" type="delfin/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="pagar-page">
+
+    <header>
+
+        <div class="logo">
+
+            <a href="ong.html">
+
+                <img src="./icono/logo.Thalassa.png" alt="Thalassa">
+
+            </a>
+
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="ong.html">Inicio</a></li>
+
+                <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+
+                <li><a href="campañas.html">Campañas</a></li>
+
+                <li><a href="contacto.html">Contacto</a></li>
+
+                <li>
+
+                    <a class="donar activo" href="donar.html">
+
+                        <img src="./icono/icon-corazon.png" alt="Corazón">
+
+                        Donar
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero-donar">
+
+            <div class="hero-donar-box">
+
+                <h1>PROTEGÉ LOS OCÉANOS</h1>
+
+                <div class="linea"></div>
+
+                <h2>Cada aporte genera un cambio real</h2>
+
+                <p>
+
+                    Gracias a cada donación podemos rescatar fauna marina,
+                    combatir la contaminación, desarrollar investigaciones
+                    científicas y proteger especies en peligro.
+
+                    Tu ayuda hace posible que nuestras campañas continúen
+                    creciendo alrededor del mundo.
+
+                </p>
+
+                <button class="btn-donar" id="abrirModal">
+
+                    💙 Donar ahora
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- BENEFICIOS -->
+
+        <section class="beneficios">
+
+            <h2>¿Por qué donar?</h2>
+
+            <div class="beneficios-grid">
+
+                <div class="beneficio">
+
+                    <div class="icono">🐢</div>
+
+                    <h3>Protección marina</h3>
+
+                    <p>
+
+                        Tu aporte permite rescatar tortugas,
+                        ballenas y otras especies afectadas por
+                        la contaminación y la pesca ilegal.
+
+                    </p>
+
+                </div>
+
+                <div class="beneficio">
+
+                    <div class="icono">🌊</div>
+
+                    <h3>Océanos más limpios</h3>
+
+                    <p>
+
+                        Colaborás con campañas internacionales
+                        de limpieza de playas, costas y fondos
+                        marinos.
+
+                    </p>
+
+                </div>
+
+                <div class="beneficio">
+
+                    <div class="icono">💙</div>
+
+                    <h3>Investigación</h3>
+
+                    <p>
+
+                        Ayudás a financiar estudios científicos
+                        que permiten conservar la biodiversidad
+                        marina para las futuras generaciones.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- CALCULADORA -->
+
+        <section class="calculadora">
+
+            <h2>Calculá tu aporte</h2>
+
+            <p>
+
+                Elegí cuánto querés donar por mes y durante cuántos meses.
+
+            </p>
+
+            <div class="calculadora-box">
+
+                <div class="campo">
+
+                    <label for="monto">Monto mensual ($)</label>
+
+                    <input type="number" id="monto" placeholder="Ejemplo: 5000" min="1000">
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="meses">Cantidad de meses</label>
+
+                    <input type="number" id="meses" placeholder="Ejemplo: 12" min="1">
+
+                </div>
+
+                <button id="btnCalcular" class="btn-calcular">
+
+                    Calcular impacto
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESULTADO -->
+
+        <section class="resultado" id="resultado">
+
+            <div class="resultado-box">
+
+                <h2>Tu impacto estimado</h2>
+
+                <div id="total">$0</div>
+
+                <div class="separador"></div>
+
+                <div class="resultado-grid">
+
+                    <div class="dato">
+
+                        <span>🐢</span>
+
+                        <h3 id="tortugas">0</h3>
+
+                        <p>Tortugas protegidas</p>
+
+                    </div>
+
+                    <div class="dato">
+
+                        <span>🐋</span>
+
+                        <h3 id="ballenas">0</h3>
+
+                        <p>Ballenas monitoreadas</p>
+
+                    </div>
+
+                    <div class="dato">
+
+                        <span>🌊</span>
+
+                        <h3 id="campañas">0</h3>
+
+                        <p>Campañas financiadas</p>
+
+                    </div>
+
+                    <div class="dato">
+
+                        <span>♻️</span>
+
+                        <h3 id="plastico">0 kg</h3>
+
+                        <p>Plástico retirado</p>
+
+                    </div>
+
+                </div>
+
+                <div class="barra-meta">
+
+                    <div class="progreso"></div>
+
+                </div>
+
+                <p class="meta">
+
+                    Meta del mes
+                    <strong>$780.000 / $1.000.000</strong>
+
+                </p>
+
+            </div>
+
+        </section>
+        <!--================ MODAL DONACIÓN =================-->
+
+        <div id="modalDonacion" class="modal">
+
+            <div class="modal-donar">
+
+                <span class="cerrar" id="cerrarModal">✕</span>
+
+                <h2>Realizar donación</h2>
+
+                <p>
+
+                    Completá los siguientes datos para colaborar con THALASSA.
+
+                </p>
+
+                <form id="formDonacion" novalidate>
+
+                    <div class="grupo">
+
+                        <label for="nombre">
+
+                            Nombre completo
+
+                        </label>
+
+                        <input type="text" id="nombre" placeholder="Ingresá tu nombre">
+
+                        <small class="error"></small>
+
+                    </div>
+
+                    <div class="grupo">
+
+                        <label for="email">
+
+                            Correo electrónico
+
+                        </label>
+
+                        <input type="email" id="email" placeholder="ejemplo@email.com">
+
+                        <small class="error"></small>
+
+                    </div>
+
+                    <div class="grupo">
+
+                        <label for="montoDonar">
+
+                            Monto a donar
+
+                        </label>
+
+                        <input type="number" id="montoDonar" min="1000" placeholder="Mínimo $1000">
+
+                        <small class="error"></small>
+
+                    </div>
+
+                    <div class="grupo">
+
+                        <label for="metodo">
+
+                            Método de pago
+
+                        </label>
+
+                        <select id="metodo">
+
+                            <option value="">Seleccioná una opción</option>
+
+                            <option>Visa</option>
+
+                            <option>Mastercard</option>
+
+                            <option>Mercado Pago</option>
+
+                            <option>Transferencia bancaria</option>
+
+                        </select>
+
+                        <small class="error"></small>
+
+                    </div>
+
+                    <button type="submit" class="btn-pagar">
+
+                        Confirmar donación
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <!--================ MODAL GRACIAS =================-->
+
+        <div id="modalGracias" class="modal">
+
+            <div class="modal-gracias">
+
+                <div class="check">
+
+                    💙
+
+                </div>
+
+                <h2>
+
+                    ¡Gracias por tu ayuda!
+
+                </h2>
+
+                <p>
+
+                    Tu donación fue registrada correctamente.
+
+                    Gracias por colaborar con THALASSA y ayudarnos
+                    a proteger los océanos.
+
+                </p>
+
+                <button id="cerrarGracias">
+
+                    Continuar
+
+                </button>
+
+            </div>
+
+        </div>
+        <!--================ FOOTER =================-->
+
+        <footer>
+
+            <div class="footer-contenedor">
+
+                <div class="footer-columna">
+
+                    <img src="./icono/logo.Thalassa.png" alt="THALASSA">
+
+                    <p>
+
+                        THALASSA Conservation Society es una organización dedicada
+                        a proteger los océanos y la biodiversidad marina mediante
+                        campañas de conservación, investigación y educación ambiental.
+
+                    </p>
+
+                </div>
+
+                <div class="footer-columna">
+
+                    <h3>Navegación</h3>
+
+                    <ul>
+
+                        <li><a href="ong.html">Inicio</a></li>
+
+                        <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+
+                        <li><a href="campañas.html">Campañas</a></li>
+
+                        <li><a href="contacto.html">Contacto</a></li>
+
+                        <li><a href="donar.html">Donar</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-columna">
+
+                    <h3>Contacto</h3>
+
+                    <p>Buenos Aires · Argentina</p>
+
+                    <p>contacto@thalassa.org</p>
+
+                    <p>+54 11 1234-5678</p>
+
+                </div>
+
+            </div>
+
+            <div class="footer-copy">
+
+                © 2026 THALASSA Conservation Society · Sitio desarrollado con fines educativos.
+
+            </div>
+
+        </footer>
+
+    </main>
+
+    <script>
+
+        const abrirModal = document.getElementById("abrirModal");
+        const modalDonacion = document.getElementById("modalDonacion");
+        const cerrarModal = document.getElementById("cerrarModal");
+
+        const modalGracias = document.getElementById("modalGracias");
+        const cerrarGracias = document.getElementById("cerrarGracias");
+
+        abrirModal.onclick = () => modalDonacion.style.display = "flex";
+
+        cerrarModal.onclick = () => modalDonacion.style.display = "none";
+
+        cerrarGracias.onclick = () => modalGracias.style.display = "none";
+
+        window.onclick = function (e) {
+
+            if (e.target == modalDonacion) {
+
+                modalDonacion.style.display = "none";
+
+            }
+
+            if (e.target == modalGracias) {
+
+                modalGracias.style.display = "none";
+
+            }
+
+        }
+
+        function error(input, mensaje) {
+
+            input.classList.add("input-error");
+
+            input.classList.remove("input-ok");
+
+            input.parentElement.querySelector(".error").textContent = mensaje;
+
+        }
+
+        function correcto(input) {
+
+            input.classList.remove("input-error");
+
+            input.classList.add("input-ok");
+
+            input.parentElement.querySelector(".error").textContent = "";
+
+        }
+
+        document.getElementById("formDonacion").addEventListener("submit", function (e) {
+
+            e.preventDefault();
+
+            let valido = true;
+
+            const nombre = document.getElementById("nombre");
+
+            const email = document.getElementById("email");
+
+            const monto = document.getElementById("montoDonar");
+
+            const metodo = document.getElementById("metodo");
+
+            if (nombre.value.trim() == "") {
+
+                error(nombre, "Ingresá tu nombre.");
+
+                valido = false;
+
+            } else {
+
+                correcto(nombre);
+
+            }
+
+            if (email.value.trim() == "" || !email.value.includes("@")) {
+
+                error(email, "Ingresá un correo válido.");
+
+                valido = false;
+
+            } else {
+
+                correcto(email);
+
+            }
+
+            if (monto.value == "" || parseInt(monto.value) < 1000) {
+
+                error(monto, "La donación mínima es de $1000.");
+
+                valido = false;
+
+            } else {
+
+                correcto(monto);
+
+            }
+
+            if (metodo.value == "") {
+
+                error(metodo, "Seleccioná un método de pago.");
+
+                valido = false;
+
+            } else {
+
+                correcto(metodo);
+
+            }
+
+            if (!valido) return;
+
+            modalDonacion.style.display = "none";
+
+            modalGracias.style.display = "flex";
+
+            this.reset();
+
+            document.querySelectorAll(".error").forEach(e => e.textContent = "");
+
+            document.querySelectorAll(".input-ok").forEach(i => i.classList.remove("input-ok"));
+
+        });
+
+        document.getElementById("btnCalcular").addEventListener("click", function () {
+
+            const monto = parseInt(document.getElementById("monto").value);
+
+            const meses = parseInt(document.getElementById("meses").value);
+
+            if (isNaN(monto) || monto < 1000) {
+
+                alert("El monto mínimo para calcular es de $1000.");
+
+                return;
+
+            }
+
+            if (isNaN(meses) || meses < 1) {
+
+                alert("Ingresá una cantidad de meses válida.");
+
+                return;
+
+            }
+
+            const total = monto * meses;
+
+            document.getElementById("total").innerHTML = "$" + total.toLocaleString("es-AR");
+
+            document.getElementById("tortugas").innerHTML = Math.floor(total / 5000);
+
+            document.getElementById("ballenas").innerHTML = Math.floor(total / 20000);
+
+            document.getElementById("campañas").innerHTML = Math.floor(total / 50000);
+
+            document.getElementById("plastico").innerHTML = Math.floor(total / 250) + " kg";
+
+            document.getElementById("resultado").scrollIntoView({
+
+                behavior: "smooth"
+
+            });
+
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const menu = document.getElementById("menu-toggle");
+
+            const nav = document.querySelector("nav");
+
+            menu.addEventListener("click", function () {
+
+                nav.classList.toggle("activo");
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

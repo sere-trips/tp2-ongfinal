@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | THALASSA</title>
+    <link rel="icon" href="./icono/Icono-delfin.png" type="delfin/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="contacto-page">
+
+    <header>
+
+        <div class="logo">
+
+            <a href="ong.html">
+
+                <img src="./icono/logo.Thalassa.png" alt="THALASSA">
+
+            </a>
+
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="ong.html">Inicio</a></li>
+
+                <li><a href="sobre.html">Sobre Nosotros</a></li>
+
+                <li><a href="campañas.html">Campañas</a></li>
+
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
+
+                <li>
+
+                    <a href="donar.html" class="donar">
+
+                        ❤ Donar
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero-contacto">
+
+            <div class="hero-box">
+
+                <h1>CONTACTANOS</h1>
+
+                <div class="linea"></div>
+
+                <h2>Estamos para ayudarte</h2>
+
+                <p>
+
+                    ¿Tenés alguna consulta, querés colaborar con THALASSA o formar parte de nuestras campañas?
+
+                    Completá el formulario y nuestro equipo responderá tu mensaje a la brevedad.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ================= CONTENEDOR ================= -->
+
+        <section class="contacto-contenedor">
+
+            <!-- ================= FORMULARIO ================= -->
+
+            <div class="formulario">
+
+                <h2>Enviá un mensaje</h2>
+
+                <form id="formulario" novalidate>
+
+                    <div class="fila">
+
+                        <div class="grupo">
+
+                            <label for="nombre">
+
+                                Nombre
+
+                            </label>
+
+                            <input type="text" id="nombre" placeholder="Ingresá tu nombre">
+
+                            <small class="error"></small>
+
+                        </div>
+
+                        <div class="grupo">
+
+                            <label for="apellido">
+
+                                Apellido
+
+                            </label>
+
+                            <input type="text" id="apellido" placeholder="Ingresá tu apellido">
+
+                            <small class="error"></small>
+
+                        </div>
+
+                    </div>
+
+                    <div class="fila">
+
+                        <div class="grupo">
+
+                            <label for="email">
+
+                                Correo electrónico
+
+                            </label>
+
+                            <input type="email" id="email" placeholder="ejemplo@email.com">
+
+                            <small class="error"></small>
+
+                        </div>
+
+                        <div class="grupo">
+
+                            <label for="telefono">
+
+                                Teléfono
+
+                            </label>
+
+                            <input type="text" id="telefono" placeholder="+54 11 1234-5678">
+
+                            <small class="error"></small>
+
+                        </div>
+
+                    </div>
+
+                    <div class="grupo">
+
+                        <label for="asunto">
+
+                            Asunto
+
+                        </label>
+
+                        <select id="asunto">
+
+                            <option value="">Seleccioná una opción</option>
+
+                            <option>Quiero ser voluntario</option>
+
+                            <option>Donaciones</option>
+
+                            <option>Información sobre campañas</option>
+
+                            <option>Alianzas institucionales</option>
+
+                            <option>Otro</option>
+
+                        </select>
+
+                        <small class="error"></small>
+
+                    </div>
+
+                    <div class="grupo">
+
+                        <label for="mensaje">
+
+                            Mensaje
+
+                        </label>
+
+                        <textarea id="mensaje" rows="8" placeholder="Escribí tu mensaje..."></textarea>
+
+                        <small class="error"></small>
+
+                    </div>
+
+                    <button type="submit" class="btn-enviar">
+
+                        Enviar mensaje
+
+                    </button>
+
+                </form>
+
+            </div>
+            <!--================= INFORMACIÓN =================-->
+
+            <aside class="informacion">
+
+                <h2>Información de contacto</h2>
+
+                <p class="info-descripcion">
+
+                    Si preferís comunicarte directamente con nuestro equipo,
+                    también podés hacerlo por cualquiera de estos medios.
+
+                </p>
+
+                <div class="info-card">
+
+                    <div>
+
+                        <h3>Correo electrónico</h3>
+
+                        <p>contacto@thalassa.org</p>
+
+                    </div>
+
+                </div>
+
+                <div class="info-card">
+
+                    <div>
+
+                        <h3>Teléfono</h3>
+
+                        <p>+54 11 1234-5678</p>
+
+                    </div>
+
+                </div>
+
+                <div class="info-card">
+
+                    <div>
+
+                        <h3>Ubicación</h3>
+
+                        <p>Buenos Aires, Argentina</p>
+
+                    </div>
+
+                </div>
+
+                <div class="info-card">
+
+                    <div>
+
+                        <h3>Horario</h3>
+
+                        <p>
+
+                            Lunes a Viernes<br>
+
+                            09:00 a 18:00 hs
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+
+
+        <!--================= MODAL =================-->
+
+        <div id="modal" class="modal">
+
+            <div class="modal-box">
+
+                <div class="modal-check">✔</div>
+
+                <h2>¡Mensaje enviado!</h2>
+
+                <p>
+
+                    Gracias por comunicarte con THALASSA.
+
+                    Nos estaremos contactando a la brevedad.
+
+                </p>
+
+                <button id="cerrarModal">
+
+                    Aceptar
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!--================= FOOTER =================-->
+
+    <footer>
+
+        <div class="footer-contenedor">
+
+            <div class="footer-columna">
+
+                <img src="./icono/logo.Thalassa.png" alt="THALASSA">
+
+                <p>
+
+                    THALASSA Conservation Society es una organización dedicada
+                    a la protección de los océanos y la conservación de la
+                    biodiversidad marina mediante campañas de acción,
+                    investigación y educación ambiental.
+
+                </p>
+
+            </div>
+
+            <div class="footer-columna">
+
+                <h3>Navegación</h3>
+
+                <ul>
+
+                    <li><a href="ong.html">Inicio</a></li>
+
+                    <li><a href="sobre.html">Sobre Nosotros</a></li>
+
+                    <li><a href="campañas.html">Campañas</a></li>
+
+                    <li><a href="contacto.html">Contacto</a></li>
+
+                    <li><a href="donar.html">Cómo ayudar</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-columna">
+
+                <h3>Contacto</h3>
+                <p>info@Thalassa.org</p>
+
+                <p>Ubicación: Madrid, España</p>
+
+                <p>Protección de los océanos</p>
+
+                <p>www.Thalassa.org</p>
+            </div>
+
+        </div>
+
+        <div class="footer-copy">
+
+            © 2026 THALASSA Conservation Society · Sitio desarrollado con fines educativos.
+
+        </div>
+
+    </footer>
+
+    <script>
+
+        const formulario = document.getElementById("formulario");
+        const modal = document.getElementById("modal");
+        const cerrar = document.getElementById("cerrarModal");
+
+        formulario.addEventListener("submit", function (e) {
+
+            e.preventDefault();
+
+            let correcto = true;
+
+            function validar(id, mensaje) {
+
+                const campo = document.getElementById(id);
+                const error = campo.parentElement.querySelector(".error");
+
+                campo.classList.remove("input-error");
+                campo.classList.remove("input-ok");
+
+                error.textContent = "";
+
+                if (campo.value.trim() === "") {
+
+                    campo.classList.add("input-error");
+                    error.textContent = mensaje;
+                    correcto = false;
+
+                } else {
+
+                    campo.classList.add("input-ok");
+
+                }
+
+            }
+
+            validar("nombre", "Ingresá tu nombre.");
+            validar("apellido", "Ingresá tu apellido.");
+            validar("email", "Ingresá un correo electrónico.");
+            validar("asunto", "Seleccioná un asunto.");
+            validar("mensaje", "Escribí un mensaje.");
+
+            const email = document.getElementById("email");
+
+            if (email.value.trim() !== "") {
+
+                const expresion = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                if (!expresion.test(email.value)) {
+
+                    email.classList.remove("input-ok");
+                    email.classList.add("input-error");
+
+                    email.parentElement.querySelector(".error").textContent =
+                        "Ingresá un correo válido.";
+
+                    correcto = false;
+
+                }
+
+            }
+
+            if (correcto) {
+
+                modal.style.display = "flex";
+
+                formulario.reset();
+
+                document.querySelectorAll(".input-ok").forEach(function (campo) {
+
+                    campo.classList.remove("input-ok");
+
+                });
+
+            }
+
+        });
+
+        cerrar.addEventListener("click", function () {
+
+            modal.style.display = "none";
+
+        });
+
+        window.addEventListener("click", function (e) {
+
+            if (e.target === modal) {
+
+                modal.style.display = "none";
+
+            }
+
+        });
+
+    </script>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const menu = document.getElementById("menu-toggle");
+
+            const nav = document.querySelector("nav");
+
+            menu.addEventListener("click", function () {
+
+                nav.classList.toggle("activo");
+
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>
