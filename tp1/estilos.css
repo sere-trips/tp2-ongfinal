@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    background-color: #ECE7DC;
+    min-height: 100vh;
+}
+
+.nav {
+    background-color: #92ABD3;
+    text-align: center;
+    padding: 15px;
+}
+
+.nav li {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.nav a {
+    background-color: #8599B8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: #FAC098;
+    color: #333;
+    transition: 0.3s;
+    background-color: #FAC098;
+    color: #333;
+    padding: 12px 22px;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    background-color: #E49C95;
+    color: white;
+    padding: 15px;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+    color: #444;
+    margin: 10px 0 20px 0;
+}
+
+h3 {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#principal {
+    background-color: #FAC098;
+    padding: 30px;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+#favoritas {
+    background-color: #92ABD3;
+    padding: 25px;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#favoritas a {
+    background: none;
+    padding: 0;
+    border-radius: 0;
+}
+
+#portada {
+    width: 350px;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+.about{
+    margin: 0% auto;
+    width: 90%;
+}
+
+#verano p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#verano h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#verano h2 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.imagenes-about img {
+    width: 220px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 15px;
+    border-radius: 15px;
+}
+
+blockquote {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: 500;
+}
+
+#favoritas img {
+    margin: 10px;
+    transition: 0.3s;
+}
+
+
+#favoritas img:hover {
+    transform: scale(1.1);
+}
+
+a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+#tabla table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+
+#tabla th {
+    background-color: #E49C95;
+    color: white;
+    padding: 10px;
+}
+
+
+#tabla td {
+    padding: 15px;
+    background-color: #fdf6f2;
+}
+
+
+#tabla td img {
+    display: block;
+    margin: auto;
+}
+
+#juego0 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#juego0 div {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+#juego0 a {
+    display: inline-block;
+    background-color: #8599B8;
+    padding: 15px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+#juego0 img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+    display: block;
+    margin: 20px auto;
+}
+
+#juego0 p {
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    color: rgb(14, 2, 2);
+    margin-top: 10px;
+}
+
+#juego0 a:hover {
+    background-color: #FAC098;
+}
+
+#juego0 img:hover {
+    opacity: 0.85;
+}
+
+section {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px
+}
+
+section p {
+    margin: 15px 0;
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+section img {
+    margin: 20px 0;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+section a {
+    background-color: #5fb0c0;
+    padding: 12px 25px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+section a:hover {
+    background-color: #FAC098;
+    color: #333;
+}
+
+li {
+    list-style-position: inside;
+}
+
+#lista-viaje {
+    text-align: center;
+    padding: 20px;
+}
+
+#lista-viaje h1 {
+    background-color: #d48f87;
+    border-radius: 20px;
+    padding: 15px;
+    width: 80%;
+    margin: 0 auto 20px auto;
+    color: white;
+}
+
+#lista-viaje h2 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.itinerario {
+    width: 60%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.itinerario>li {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.itinerario ul {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+
+.itinerario ul li {
+    font-size: 16px;
+    color: #555;
+}
+
+.temporadas {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.bloque-temporada {
+    display: inline-block;
+    width: 35%;
+    vertical-align: top;
+    margin: 10px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.bloque-temporada h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.bloque-temporada li {
+    text-align: left;
+    color: #555;
+}
+
+.checklist {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.bloque {
+    display: inline-block;
+    width: 40%;
+    background-color: #f4f4f4;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    vertical-align: top;
+}
+
+.bloque h3 {
+    margin-bottom: 12px;
+    color: #2f3e46;
+    font-size: 18px;
+}
+
+.bloque li {
+    text-align: left;
+    margin: 6px 0;
+    color: #555;
+}
+
+.bloque ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.titulo-bolso {
+    color: #3a86ff;
+    margin-top: 35px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.titulo-asistencia {
+    color: #2a9d8f;
+    margin-top: 35px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.titulo-checklist {
+    color: #e76f51;
+    margin-top: 35px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.contenedor {
+    background-color: #ECE7DC;
+    display: flex;
+}
+
+.aside {
+    width: 25%;
+    padding: 20px;
+    background-color: #7F9AC5;
+}
+
+.aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+.aside li {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 20px 0;
+    margin: 60px 0;
+}
+
+.aside a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.aside a:hover {
+    background-color: #f4a261;
+    color: white;
+}
+
+.main {
+    background-color: #ffffff;
+    width: 75%;
+    text-align: center;
+    padding: 20px;
+}
+
+.main img {
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.frase-playlist {
+    background-color: #e6a4a4;
+    color: #3a3a3a;
+    text-align: center;
+    padding: 12px;
+    margin: 0 auto 20px auto;
+    width: 90%;
+    border-radius: 10px;
+    font-style: italic;
+}
+
+.footer {
+    background-color: #8599B8;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
